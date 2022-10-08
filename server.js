@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-// var knex = require("./models/database")
 const cookieParser = require("cookie-parser")
 const userRoutes = require("./routes/userRoutes")
 const blogRoutes = require("./routes/blogRoutes")
