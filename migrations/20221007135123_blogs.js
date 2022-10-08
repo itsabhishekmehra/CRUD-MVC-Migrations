@@ -7,11 +7,9 @@ exports.up = function (knex) {
         // tableblog.timestamps(true, true)
         tableblog.timestamp('created_at').defaultTo(knex.fn.now())
         tableblog.timestamp('updated_at').defaultTo(knex.fn.now())
-
     })
 };
 
 exports.down = function (knex) {
     return knex.schema.dropTable('blogs')
-
 };
